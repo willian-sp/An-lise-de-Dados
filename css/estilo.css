@@ -1,0 +1,165 @@
+
+/***********************************************************************/
+/***********************************************************************/
+/*MAIN*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Objetivo{
+    display: flex;
+    justify-content: center;
+}
+
+#Objetivo > section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#ObjetivoInfos{
+    width: 600px;
+}
+
+#BoxDashboardAnalises{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#Habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background: rgba(11, 157, 241,.7);
+    color: snow;
+
+}
+
+.habilidadesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.imgsHabilidadesBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Habilidades > section{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Habilidades img{
+    width: 120px;
+    height: 120px;
+}
+
+.dashboard{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:3px solid rgba(11, 157, 241,.7);
+    padding: 70px 20px 50px 20px;
+    border-radius: 20px;
+    position: relative;
+    /* justify-content: space-between; */
+}
+
+.dashboard span{
+    font-weight: 800;
+}
+
+.dashboard img{
+    width: 450px;
+
+}
+
+.dashboard h3{
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background:rgba(11, 157, 241,.6);
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+#dashboardBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.selo-andamento{
+    height: 36px;
+    background: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    z-index: 10;
+    color: snow;
+}
+
+/***********************************************************************/
+/***********************************************************************/
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,.85);
+    color: snow;
+}
+
+footer h2{
+    text-align: left;
+}
+
+footer ul{
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+footer img{
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+}
+
+footer ul li{
+    display: flex;
+    align-items: center;
+}
+
+#ContatoInfos{
+    display:  flex;
+    justify-content: space-between;
+}
+
+#QRCode p{
+    text-align: center;
+}
+
+#QRCode img{
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+}
+
+/***********************************************************************/
+/***********************************************************************/

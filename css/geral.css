@@ -1,0 +1,93 @@
+/***********************************************************************/
+/***********************************************************************/
+/*GERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%
+}
+
+a{
+    font-family: "Open Sans";
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .5s;
+    padding-bottom: .5rem;
+}
+
+a:active{
+
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    border-bottom: 1px solid snow;
+}
+
+h1{
+    font-family: "Open Sans", sans-serif;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+h2{
+    font-family: "Open Sans";
+    margin: 2rem 0;
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h3{
+    font-family: "Open Sans";
+    padding:1rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    margin: 1rem 0;
+    padding: 1rem 0 2rem 0;
+    font-size: 1.4rem;
+    text-align: justify;
+    /* font-family: "Open Sans"; */
+    line-height: 1.8rem;
+}
+
+article{
+    width: 100%;
+}
+
+.container{
+    width: 1200px;
+    padding: 6rem 0;
+}
+
+#Logo{
+    width: 120px;
+    height: 120px;
+}
+
+/*Padding top/bottom menor (40px 0), usado no container do <HEADER>*/
+.espacos-1{
+    padding: 40px 0;
+}
+
+a.linkBotao{
+    background: rgb(11, 157, 241);
+    color: white;
+    border-radius: 40px;
+    padding: 10px 60px;
+    font-family: "Open Sans";
+}
