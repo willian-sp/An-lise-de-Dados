@@ -1,0 +1,682 @@
+/* ############################ */
+/* GERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+*::selection{
+    background-color: rgba(0,0,0,0);
+}
+
+body{
+    /* background-color: #141e2c; */
+    /* background-color: #404a53; */
+    /* background-color: #333333; */
+    background-color: #303030;    
+}
+
+header{
+    padding: 1rem 4rem;
+}
+
+.container-max{
+    padding: 4rem;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    color: #fcbf49;
+    padding: .3rem 0;
+}
+
+h3{
+    color:#303030;
+}
+
+h1{
+    font-family: "Orbitron";
+    font-weight: bold;
+}
+
+h2, h3{
+    font-family: "Inter";
+}
+
+p{
+    font-size: 1rem;
+    font-family: "inter";
+    color: #f5f7f6;
+    padding: 1rem 0;
+    letter-spacing: .1rem;
+}
+
+ul{
+    display: flex; 
+    gap: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #f5f7f6;
+    text-decoration: none;
+    font-family: "Orbitron";
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+a:hover{
+    color: #fcbf49;
+    /* color: #f5f7f6; */
+    transition: color .5s;
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  /* color: #fcbf49; */
+  color: #f5f7f6;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  /* background-color: #fcbf49; */
+  background-color: #fcbf49;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Classes Gerais */
+.txt-dourado{
+    color: #fcbf49;
+}
+
+i{
+    color: #fcbf49;
+    font-size: 1rem;
+    margin-right: .3rem;
+    border: 1px solid #fcbf49;
+    padding: .5rem;
+}
+
+.sep-dourado{
+    width: 100%;
+    max-width: 1000px;
+    border: 1px solid rgba(252, 191, 73, 0.5);
+}
+
+.btn-link-dourado{
+    padding: .8rem 2rem;
+    background-color: #fcbf49;
+    color:#303030;
+    text-transform: uppercase;
+    min-width: 200px;
+    text-align: center;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.btn-link-dourado:hover{
+    color:#303030;
+    box-shadow: 0 0 8px 0 #fcbf49;
+}
+
+.btn-link-dourado-transp{
+    padding: .8rem 2rem;
+    color:#fcbf49;
+    border: 1px solid #fcbf49;
+    text-transform: uppercase;
+    min-width: 200px;
+    text-align: center;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.btn-link-dourado-transp:hover{
+    color:#303030;
+    background-color: rgba(252, 191, 73, 0.5);
+    box-shadow: 0 0 8px 0 rgba(252, 191, 73, 0.5);
+}
+
+.cta-btns-line{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.flex-col-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+.btn-em-breve{
+    background-color:#303030;
+    color:#f5f7f6;
+    cursor: default;
+}
+
+.btn-em-breve:hover{
+    color: #f5f7f6;
+    box-shadow: none;
+    
+}
+
+.back_to_top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* ############################ */
+/* HEADER */
+header{
+    border-bottom: 1px solid #fcbf49;
+    box-shadow: 0 0 6px #fcbf49;
+    position: sticky;
+    top: 0;
+    background-color: #303030;
+    z-index: 1000;
+}
+
+header > section.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt-icone{
+    color: #f5f7f6;
+    font-family: "Orbitron";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* ############################ */
+/* MAIN */
+
+/* ID SOBRE */
+#sobre{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    position: relative;
+    padding: 8rem 6rem;
+}
+
+#sobre p{
+    text-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+
+.sec-sobre{
+    width: 100%;
+    max-width: 700px;
+}
+
+img.logo{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fcbf49;
+    box-shadow: 0 0 12px #fcbf49;
+}
+
+.efe-borda-sup-esq,
+.efe-borda-sup-dir,
+.efe-borda-inf-esq,
+.efe-borda-inf-dir{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+}
+
+.efe-borda-sup-esq{
+    border-left: .5px solid #fcbf49;
+    border-top: .5px solid #fcbf49;
+    top: 0;
+    left: 0;
+}
+
+.efe-borda-sup-dir{
+    border-right: .5px solid #fcbf49;
+    border-top: .5px solid #fcbf49;
+    top: 0;
+    right: 0;
+}
+
+.efe-borda-inf-esq{
+    border-left: .5px solid #fcbf49;
+    border-bottom: .5px solid #fcbf49;
+    bottom: 0;
+    left: 0;
+}
+
+.efe-borda-inf-dir{
+    border-right: .5px solid #fcbf49;
+    border-bottom: .5px solid #fcbf49;
+    bottom: 0;
+    right: 0;
+}
+
+.bg-sobre {
+  position: relative;
+}
+
+.bg-sobre::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/imgs/bg sobre.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1; /* controla aqui */
+  z-index: 0;
+}
+
+#sobre {
+    position: relative;
+    z-index: 1;
+}
+/* ID Habilidades */
+.flex-n p,
+.flex-r p{
+    max-width: 600px;
+}
+
+.flex-n img,
+.flex-r img{
+    max-width: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-n{
+    display: flex;
+    gap: 2rem;
+}
+
+.flex-r{
+    display: flex;
+    gap: 2rem;
+    flex-direction: row-reverse;
+}
+
+
+/* ID Portifólio */
+#portifolio{
+    background-color: #303030;
+    /* padding: 2rem 0; */
+    padding: 4rem;
+}
+
+#portifolio h2,
+#habilidades h2,
+#portifolio h2,
+#contato h2 {
+    font-family: "Orbitron";
+    font-size: 2rem;
+    padding: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px #fcbf49;
+    letter-spacing: .1rem;
+}
+
+.sec-portifolio{
+    max-width: 350px;
+    width: 100%;
+    border-radius: 32px;
+    background-color: #f5f7f6;
+    box-shadow: 2px 2px 12px 0 black;
+    padding: 0 0 2rem 0;
+}
+
+.box-img-portifolio{
+    background-color: orange;
+    padding: 1rem;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    height: 200px;
+}
+
+.box-texto-portifolio{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-texto-portifolio h3{
+    text-align: center;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+}
+
+.box-texto-portifolio p{
+    color: #303030;
+    letter-spacing: .1rem;
+    word-spacing: .3rem;
+    font-size: .8rem;
+    padding: 1rem 0 1.5rem 0;
+}
+
+.img-portifolio{
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-portifolio {
+    position: relative;
+    background-color: #0b0f19;
+    overflow: hidden;
+}
+
+.bg-portifolio::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+    background-size: 50px 50px;
+
+    -webkit-mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+    mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+
+    z-index: 0;
+}
+
+.bg-portifolio > * {
+    position: relative;
+    z-index: 1;
+}
+
+.box-titulo-habilidade{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+    padding: 4rem 0 4rem 0;
+}
+
+.box-portifolio-projs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-1{
+    background-image: url('Assets/imgs/capa_majestic.png');
+    background-size: cover;
+}
+
+.bg-2{
+    background-image: url('Assets/imgs/dash_enem.png');
+    background-size: cover;
+}
+
+.bg-3{
+    background-image: url('Assets/imgs/dash_vinho.png');
+    background-size: cover;
+}
+
+/* ID Contato */
+#contato{
+    padding: 0 0 3rem 0;
+
+}
+
+#contato i{
+    font-size: 3rem;
+    min-width: 70px;
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+/* ############################ */
+/* Footer */
+footer{
+    padding: .5rem;
+    background-color: #333333;
+    border-top: 1px solid #fcbf49;
+}
+
+footer > section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.txt-dev-por{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .7rem;
+    color: #cecece;
+}
+
+/* ############################ */
+/* @Media Queries */
+@media screen and (max-width: 1200px){
+    #sobre{
+        gap: 50px;
+        position: relative;
+        padding: 4rem 2rem;
+    }
+
+    .sec-portifolio {
+        max-width: 300px;
+    }
+
+    .img-portifolio {
+        max-width: 200px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1080px){
+    #sobre{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 4rem;
+    }
+
+    .bg-portifolio::before {
+        background-position: center;
+    }
+
+    .sec-portifolio{
+        max-width: 270px;
+    }
+
+    .box-portifolio-projs{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .sec-portifolio{
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    /* .sec-portifolio{
+        max-width: 240px;
+    } */
+}
+
+
+
+
+@media screen and (max-width: 880px){
+    header{
+        padding: 1rem 2rem;
+    }
+    
+    header > section.container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    #sobre{
+        padding: 4rem 3rem;
+    }
+
+    img.logo{
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #sobre{
+        padding: 0;
+    }
+
+    .efe-borda-sup-esq,
+    .efe-borda-sup-dir,
+    .efe-borda-inf-esq,
+    .efe-borda-inf-dir{
+        display: none;
+    }
+
+    #portifolio{
+        padding: 2rem 4rem;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+   
+    /* main{
+        padding: 4rem 2rem;
+    } */
+
+    .btns-sobre{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    footer{
+        padding: 1rem;
+    }
+
+    footer > section{
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    #sobre{
+        padding: 0;
+    }
+
+    .container-max{
+        padding: 2rem;
+    }
+
+    .flex-n,
+    .flex-r{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #portifolio h2, 
+    #habilidades h2, 
+    #portifolio h2,
+    #contato h2 {
+        font-size: 1rem;
+    }
+
+    .box-tituto-habilidade {
+        padding: 1.5rem 0 .5rem 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    header {
+        padding: 1rem 2rem 2rem 2rem;
+    }
+    
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #portifolio {
+        padding: 2rem 2rem;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .container-max{
+        padding: 20px;
+    }
+
+    #contato i {
+        font-size: 2rem;
+        min-width: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 350px){
+    #portifolio {
+        padding: 2rem 1rem;
+    }
+
+    .box-texto-portifolio p {
+        padding: 1.5rem 0;
+    }
+}
