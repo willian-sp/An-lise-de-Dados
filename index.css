@@ -295,7 +295,7 @@ img.logo{
   content: "";
   position: absolute;
   inset: 0;
-  background: url("assets/imgs/bg sobre.webp");
+  background: url("Assets/imgs/bg sobre.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -680,3 +680,4 @@ footer > section{
         padding: 1.5rem 0;
     }
 }
+
