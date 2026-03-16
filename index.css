@@ -295,7 +295,7 @@ img.logo{
   content: "";
   position: absolute;
   inset: 0;
-  background: url("Assets/imgs/bg sobre.webp");
+  background: url("assets/imgs/bg sobre.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -443,7 +443,7 @@ img.logo{
 }
 
 .bg-2{
-    background-image: url('Assets/imgs/dash_enem.png');
+    background-image: url('Assets/imgs/Technova Chamados.png');
     background-size: cover;
 }
 
@@ -680,4 +680,3 @@ footer > section{
         padding: 1.5rem 0;
     }
 }
-
